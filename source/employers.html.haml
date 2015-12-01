@@ -1,5 +1,6 @@
 - description "Hire London's top junior developers from Makers Academy."
 - title "Employers"
+
 %section.hero-splash{style: "background-image: url(#{image_path("backgrounds/students-in-lecture.jpg")});"}
   .container
     .centered-row
@@ -8,7 +9,7 @@
       %p 30 new candidates every 6 weeks
     .button-row
       %p
-        = link_to "Hire Developers", "https://makersacademy.typeform.com/to/sz8vTw", class: "button button--vertical", target: "_blank"
+        = link_to "Hire Developers", "http://bit.ly/hire_junior_devs", class: "button button--vertical", target: "_blank"
 
 %section
   .container
@@ -16,15 +17,12 @@
       %h2 Work-ready junior developers
     .three-width-row
       .column
-        = image_tag "icons/icon-heart.png", class: "image--medium"
         %h3 Passion
         %p Driven, curious and engaged: our graduates are incredibly enthusiastic about code. They are determined and dedicated in the face of problems and committed to constantly discovering more.
       .column
-        = image_tag "icons/icon-craft.png", class: "image--medium"
         %h3 Craft
         %p Clean, maintainable and extendable: their code is a pleasure to read. Our graduates are advocates of TDD, pair programming, and SOLID and Agile principles - they write quality code.
       .column
-        = image_tag "icons/icon-briefcase.png", class: "image--medium"
         %h3 Experience
         %p Personable, knowledgable and capable: our graduates add value beyond the code - most have built successful careers in other industries: experience they will bring to your company.
 
@@ -63,7 +61,7 @@
         %h2.statistic 28
         %h4.subheader Average Age
       .column
-        %h2.statistic 35.18%
+        %h2.statistic 35%
         %h4.subheader Female Students
       .column
         %h2.statistic 85%+
@@ -135,7 +133,6 @@
           %p You don't pay a penny for engaging with our graduates, whether you're attending our careers fair, or simply posting a job - you only pay when you find someone you like.
           %p Our fee is also greater than some other sources of recruitment, because working with Makers Academy is much more than simply getting a list of keyword-matched CVs. We know our candidates inside-out, we're technologists and educators, not salespeople - and we care about creating the next generation of exceptional software developers.
 
-
 %section.backgrounded
   .container
     .centered-row
@@ -155,10 +152,6 @@
             %td Agile
             %td Diverse
 
-%section.backgrounded
-  .container
-    .image-grid-row
-      - fetch_logos.shuffle.each do | logo |
-        = image_tag logo, { alt: alt_text_from_filename(logo), title: alt_text_from_filename(logo) }
+= partial :"partner_logos"
 
-= partial :"apply", locals: { page: :employers }
+= partial :"hire"

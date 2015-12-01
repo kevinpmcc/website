@@ -1,0 +1,42 @@
+- description "Makers Academy is London's leading Web Developer Bootcamp. Learn to code in 12 Weeks by enrolling on one of our programming / web development courses! Learn Ruby, JavaScript and the best software practices."
+%section.hero-splash{style: "background-image: url(#{image_path("backgrounds/dan-and-students-overhead-70.jpg")});"}
+  .container
+    .centered-row
+      %h1 Hiring Developers is Hard
+      %h4.subheader but not any more
+
+      %p Finding good people, with the right attitude - with passion for what they do, who over-deliver time and again - has always been hard, and it's even harder finding good developers.
+
+      %p Which is why we only pick super-smart, super-driven, passionate and curious people to study at Makers Academy. And you can hire them.
+    = partial :"email-capture", locals: { segments: "hiring-developers" }
+
+%section
+  .container
+    .centered-row
+      %h2 Why hire from us?
+    .three-width-row
+      .column
+        %h3 Passion
+        %p Driven, curious and engaged: our graduates are incredibly enthusiastic about code. They are determined and dedicated in the face of problems and committed to constantly discovering more.
+      .column
+        %h3 Craft
+        %p Clean, maintainable and extendable: their code is a pleasure to read. Our graduates are advocates of TDD, pair programming, and SOLID and Agile principles - they write quality code.
+      .column
+        %h3 Experience
+        %p Personable, knowledgable and capable: our graduates add value beyond the code - most have built successful careers in other industries: experience they will bring to your company.
+
+%section.backgrounded
+  .container
+    .image-grid-row
+      = image_tag "hiring-partners/Deloitte-Digital.png", { alt: "Deloitte Digital", title: "Deloitte Digital" }
+      = image_tag "hiring-partners/compare-the-market.png", { alt: "Compare the Market", title: "Compare the Market" }
+      = image_tag "hiring-partners/ThoughtWorks.png", { alt: "ThoughtWorks", title: "ThoughtWorks" }
+
+= partial :"employer_testimonials"
+
+= partial :"hire"
+
+/ Analytics event for landing page
+:javascript
+  analytics.track('Viewed Landing Page', {'Landing Page': 'hiring-developers'});
+  analytics.identify({'hiring-developers': true});
