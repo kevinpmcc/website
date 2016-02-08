@@ -1,0 +1,118 @@
+- description "Hire CITY's top junior developers from Makers Academy."
+- title "Employers"
+%section.hero-splash{style: "background-image: url(#{image_path("backgrounds/students-in-lecture.jpg")});"}
+  .container
+    .centered-row
+      %h4.leader Hire CITY's
+      %h1 top junior developers
+      %p 30 new candidates every 6 weeks
+      .three-width-row
+        .column
+          .image--centered
+            = image_tag "hiring-partners/MS-labs.png"
+          .image--centered
+            = image_tag "hiring-partners/compare-the-market.png"
+        .column
+          = link_to "Start Hiring", "/employers.html", class: "button button--horizontal"
+        .column
+          = image_tag "hiring-partners/Deloitte-Digital.png"
+          = image_tag "hiring-partners/Sky.png"
+
+%section
+  .container
+    .centered-row
+      %h2 Recruitment is hard
+      %p so we do the hard work for you
+    .three-width-row
+      .column
+        %h3 We Select
+        %p We only accept 10% of applicants on our course. The talent we select have built successful careers in other industries. Without training, they're already exceptional individuals. Those that make it until the end are the talent you need.
+      .column
+        %h3 We Train
+        %p Our students learn for 60h+/week, including weekends. Their code is clean, maintainable and extendable. They're advocates of TDD, pair programming, SOLID and Agile principles. They've learnt to actually build software in teams.
+      .column
+        %h3 We Match
+        %p Finding, filtering and interviewing is time consuming and costly. We do this for you, so you only have to meet a handful of candidates per  job you need filling. You can ask our students to complete a technical test too, in any coding language.
+
+%section.backgrounded
+  .container
+    .centered-row
+      %h2 How will it work for you?
+    .three-width-row
+      .column
+        %h3 1. Post a Job
+        %p Give us all the details about the job you're looking to fill. The more information you give us, the easier it will be to match you with the right candidates. Rest assure, your job will only be shared with Makers Academy talent.
+      .column
+        %h3 2. Meet
+        %p We will find the right candidates for you to interview, those most interested by your company and role, and most adapted to your needs. Your job is to provide the technical and cultural interview.
+      .column
+        %h3 3. Hire
+        %p Make an offer and attract the talent you need. You're all competing for the same talent-pool. We recommend, if possible, that you hire a pair of software engineers that have learn together.
+
+%section.half-slider
+  .container
+    .half-slider-row
+      .column
+        .copy.copy--left
+          %h3 Who they are
+          %p Makers Academy graduates are passionate, driven, curious and engaging.
+          %p They solve their own problems, are exceptionally fast and effective learners, and understand the business context beyond the code.
+          %p The majority of our graduates have been successful in another industry, including law, marketing, banking, design, and many more: that's experience they'll bring to your company.
+      .column
+        = partial :"preview_graduates"
+
+%section.backgrounded
+  .container
+    .four-width-row.row-with-borders
+      .column
+        %h2.statistic £32k
+        %h4.subheader Average Salary in London
+      .column
+        %h2.statistic 28
+        %h4.subheader Average Age
+      .column
+        %h2.statistic 35%
+        %h4.subheader Female Engineers
+      .column
+        %h2.statistic >800H
+        %h4.subheader of coding
+
+
+= partial :"employer_testimonials"
+
+
+%section.hero-splash{style: "background-image: url(#{image_path("backgrounds/students-in-lecture.jpg")});"}
+  .container
+    .centered-row
+      %h2 300+ companies worldwide have hired our talent
+      .three-width-row
+        .column
+          .image--centered
+            = image_tag "hiring-partners/ThoughtWorks.png"
+          .image--centered
+            = image_tag "hiring-partners/pivotal-labs.png"
+            = image_tag "hiring-partners/TechStars.png"
+        .column
+          = link_to "Start Hiring", "/employers.html", class: "button button--horizontal"
+        .column
+          = image_tag "hiring-partners/Shutl.png"
+          = image_tag "hiring-partners/just-giving.png"
+          = image_tag "hiring-partners/Qubit.png"
+
+%section
+  .container
+    .three-width-row
+      .column
+        %h4 How much will it cost me to hire?
+        %p Your first pair of junior software engineers is free, if you hire a pair. After that we charge a 20% fee.
+      .column
+        %h4 What training are they going through?
+        %p
+        Check our
+        = link_to "curriculum", "/curriculum.html"
+        to see what our students learn. You can also find lots of
+        = link_to "case studies of graduates", "/graduates.hml"
+        who now are working as software engineers at leading tech firms all over the world.
+      .column
+        %h4 Do you always have talent in my city?
+        %p We’re currently growing at a fast rate but we might not yet have someone in your specific area. If we don't, we recommend you tell us so we can find talent happy to move to your location or already there waiting to be trained.
