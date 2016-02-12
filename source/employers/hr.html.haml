@@ -1,5 +1,7 @@
-- description "HR LandingPage by ASTP"
+- description "Hire London's top junior developers from Makers Academy."
 - title "Employers"
+- @hide_from_google = true
+
 %section.hero-splash{style: "background-image: url(#{image_path("backgrounds/students-in-lecture.jpg")});"}
   .container
     .centered-row
@@ -13,7 +15,7 @@
       %h4.leader Why hire a
       %h3 junior developer?
       %p When you invest in the brilliance, enthusiasm and tenacity of a junior developer, you’re investing in building a focused, talented and loyal workforce. Most Makers Academy developers have already found success in other industries, so they add value to teams beyond the code. This makes them better candidates for your roles.
-    = link_to "Start Hiring", "/employers.html", class: "button button--horizontal"
+    = link_to "Start Hiring", "/employers/contact.html", class: "button button--horizontal"
 
 %section.backgrounded
   .container
@@ -28,9 +30,9 @@
 
 %section.hero-splash{style: "background-image: url(#{image_path("backgrounds/post-it-notes.jpg")});"}
   .container
-    %h2 Learning to be a developer at Makers Academy isn't just about what you know.
+    %h4.leader Learning to be a developer at Makers Academy
+    %h2 isn't just about what you know.
     %h3.subheader It's also about how you do it.
-
 
 %section
   .container
@@ -43,7 +45,7 @@
       We firmly believe in quality over quantity, and after 800+ hours of intensive training at Makers Academy, we know our developers inside-out. We'll work with you to help you invest in a junior developer who will make a real difference to your organisation.
     %p
       Put simply - better developers, brought to you.
-    = link_to "Start Hiring", "/employers.html", class: "button button--horizontal"
+    = link_to "Start Hiring", "/employers/contact.html", class: "button button--horizontal"
 
 %section.backgrounded
   .container
@@ -64,4 +66,4 @@
       = image_tag "hiring-partners/ThoughtWorks.png"
       = image_tag "hiring-partners/TechStars.png"
     .centered-row.small-padding-top
-      = link_to "Start Hiring", "/employers.html", class: "button button--horizontal"
+      = link_to "Start Hiring", "/employers/contact.html", class: "button button--horizontal"
