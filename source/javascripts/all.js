@@ -13,7 +13,8 @@
 // bower_components/makers_styles/source/javascripts/vendor/baseliner.js
 // bower_components/makers_styles/source/javascripts/navigation.js
 // bower_components/makers_styles/source/javascripts/jquery.fixedscroll.js
-// bower_components/makers_styles/source/javascripts/doorbell.js
+// bower_components/makers_styles/source/javascripts/groovehq.js
+
 
 
 //= require vendor/jquery
@@ -22,8 +23,8 @@
 //= require vendor/prism
 //= require email_capture
 //= require navigation
+//= require groovehq
 //= require jquery.fixedscroll
-//= require doorbell
 //= require vendor/baseliner
 //= require tabs
 //= require vertical_tabs
@@ -39,6 +40,3 @@ $(document).ready(function() {
 
   $('.definition-links').fixedScroll();
 });
-
-
-
