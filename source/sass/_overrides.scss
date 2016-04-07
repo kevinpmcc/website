@@ -19,13 +19,21 @@
   margin-bottom: 0px !important;
 }
 
-// Doorbell.io
+// Groove button
 
 #groove-button {
-  font-size: 18px;
-  border: 2px solid rgba(#fff, 0.6);
-  border-bottom: 0;
+  font-family: $futura !important;
+  background-color: $dark-gray !important;
+  font-size: $base-font-size !important;
+  border: 2px solid rgba(#fff, 0.6) !important;
+  border-bottom: 0 !important;
+  padding-top: ma-spacing(0.25) !important;
+  padding-bottom: ma-spacing(0.25) !important;
   @include media($mobile) {
-    display: none;
+    display: none !important;
+  }
+
+  #gw-header-content {
+    font-weight: 500 !important;
   }
 }
