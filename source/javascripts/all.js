@@ -21,9 +21,9 @@
 //= require vendor/retina.min
 //= require vendor/slick.js
 //= require vendor/prism
+//= require vendor/groovehq
 //= require email_capture
 //= require navigation
-//= require groovehq
 //= require jquery.fixedscroll
 //= require vendor/baseliner
 //= require tabs
